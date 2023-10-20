@@ -1,5 +1,4 @@
-# hybrid-parallel-SGD
-# Hybrid Data Parallelism for Efficient Neural Network Training
+# Hybrid Parallel Stochastic Gradient Descent for Efficient Neural Network Training
 
 ## Abstract
 
