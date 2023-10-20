@@ -3,5 +3,13 @@
 
 ## Abstract
 
-Stochastic Gradient Descent (SGD) is a crucial tool for accelerating the training of models on large datasets. In addition to this, data parallelism is widely employed as a technique to efficiently train neural networks using multiple worker nodes in parallel. Commonly, two approaches are used: synchronous, where all nodes collaborate simultaneously, and asynchronous, where nodes work more independently. However, both of these methods have their limitations.
-
+Stochastic Gradient Descent is used for large datasets to train models to reduce the training time. On top of that data parallelism is
+widely used as a method to efficiently train neural networks using
+multiple worker nodes in parallel. Synchronous and asynchronous
+approach to data parallelism is used by most systems to train the
+model in parallel. However, both of them have their drawbacks.
+We propose a third approach to data parallelism which is a hybrid
+between synchronous and asynchronous approaches, using both approaches to train the neural network. When the threshold function
+is selected appropriately to gradually shift all parameter aggregation from asynchronous to synchronous, we show that in a given
+time period our hybrid approach outperforms both asynchronous
+and synchronous approaches.
